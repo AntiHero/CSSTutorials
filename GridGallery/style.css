@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+}
